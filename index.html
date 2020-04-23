@@ -10,32 +10,32 @@
 
 <body>
     <header class="border" id="header">
-        <section class="border" id="header-section">
+        <nav class="border" id="nav-bar">
+            <span class="border span-link"><a class="nav-link" href="#header">Home</a></span>
+            <span class="border span-link"><a class="nav-link" href="#nosotros">Nosotros</a></span>
+            <span class="border span-link"><a class="nav-link" href="#servicios">Servicios</a></span>
+            <span class="border span-link"><a class="nav-link" href="#productos">Productos</a></span>
+            <span class="border span-link"><a class="nav-link" href="#section-form">Registro</a></span>
+        </nav>
             <div class="border" id="header-texto">
                 <h1>Botanical Spa</h1>
-                <h3>Tati Ochoa</h3>
+                <h3>Servicios personalizados</h3>
             </div>
-            <div class="border" id="header-contenedor-img"><img class="border" id="header-img"
+            </div>
+            <img class="border" id="header-img"
                     src="/landing-page/images/logo.png" alt="logo">
-            </div>
-        </section>
-        <nav class="border" id="nav-bar">
-            <span class="border span-link-1"><a class="nav-link" href="#nosotros">Nosotros</a></span>
-            <span class="border span-link-2"><a class="nav-link" href="#servicios">Servicios</a></span>
-            <span class="border span-link-3"><a class="nav-link" href="#productos">Productos</a></span>
-        </nav>
     </header>
     <main id="main">
         <section class="border" id="section-video">
             <iframe id="video" width="400" height="auto" src="https://www.youtube.com/embed/rSf5MhsnQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section class="border" id="section-informacion">
-            <article class="nosotros border">
+            <article class="nosotros border" id="nosotros">
                 <h2>Nosotros</h2>
                 <p>Somos un centro de relajación personalizado; nuestro ideal es enfocarnos en las necesidades de cada
                     cliente, usando productos botánicos</p>
             </article>
-            <article class="servicios border">
+            <article class="servicios border" id="servicios">
                 <h2>Servicios</h2>
                 <ul>
                     <li>Piscinas Cálidas</li>
@@ -43,7 +43,7 @@
                     <li>Boticario</li>
                 </ul>
             </article>
-            <article class="productos border">
+            <article class="productos border" id="productos">
                 <h2>Productos</h2>
                 <ul>
                     <li>Aceites esenciales</li>
@@ -55,10 +55,10 @@
         </section>
     </main>
     <section class="border" id="section-form">
-        <form class="border" id="form" action="">
+        <form class="border" id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="name" type="text" placeholder="Nombre"></input>
-            <input id="email" type="email" placeholder="email"></input>
-            <input id="submit" type="submit" href=" https://www.freecodecamp.com/email-submit " placeholder="Enviar"></input>
+            <input id="email" type="email" placeholder="email" name="email"></input>
+            <input id="submit" type="submit" placeholder="Enviar"></input>
         </form>
     </section>
 </body>
