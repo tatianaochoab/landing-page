@@ -10,6 +10,12 @@
 
 <body>
     <header class="border" id="header">
+        <div class="border" id="header-texto">
+            <h1>Botanical Spa</h1>
+            <h3>Servicios personalizados</h3>
+        </div>
+        </div>
+       
         <nav class="border" id="nav-bar">
             <span class="border span-link"><a class="nav-link" href="#header">Home</a></span>
             <span class="border span-link"><a class="nav-link" href="#nosotros">Nosotros</a></span>
@@ -17,17 +23,15 @@
             <span class="border span-link"><a class="nav-link" href="#productos">Productos</a></span>
             <span class="border span-link"><a class="nav-link" href="#section-form">Registro</a></span>
         </nav>
-            <div class="border" id="header-texto">
-                <h1>Botanical Spa</h1>
-                <h3>Servicios personalizados</h3>
-            </div>
-            </div>
-            <img class="border" id="header-img"
-                    src="/landing-page/images/logo.png" alt="logo">
+
+        <img class="border" id="header-img" src="/landing-page/images/logo.png" alt="logo">
+
     </header>
     <main id="main">
         <section class="border" id="section-video">
-            <iframe id="video" width="400" height="auto" src="https://www.youtube.com/embed/rSf5MhsnQRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="400" height="auto" src="https://www.youtube.com/embed/rSf5MhsnQRI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
         <section class="border" id="section-informacion">
             <article class="nosotros border" id="nosotros">
@@ -53,14 +57,15 @@
                 </ul>
             </article>
         </section>
+        <section class="border" id="section-form">
+            <form class="border" id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="name" type="text" placeholder="Nombre"></input>
+                <input id="email" type="email" placeholder="email" name="email"></input>
+                <input id="submit" type="submit" placeholder="Enviar"></input>
+            </form>
+        </section>
     </main>
-    <section class="border" id="section-form">
-        <form class="border" id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="name" type="text" placeholder="Nombre"></input>
-            <input id="email" type="email" placeholder="email" name="email"></input>
-            <input id="submit" type="submit" placeholder="Enviar"></input>
-        </form>
-    </section>
+    
 </body>
 
 </html>
