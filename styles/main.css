@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
 
 html body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
     height: 100vh;
-    background: url(/landing-page/images/fondo.jpg);
+    background: url(/landing-page/images/fondo-spa-9.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -26,36 +30,39 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-    background: rgb(119, 86, 105);
+    background: rgb(22, 53, 36);
+    display: flex;
 }
 
 #nav-bar .span-link{
     float: left;
     text-align: center;
     border-radius: 5px;
-    margin: 5px;
-    padding: 30px 8px;
-    
+    margin: 3px;
+    padding: 10px 8px;
+    align-self: center;    
 }
+
 #nav-bar .span-link .nav-link{    
     text-decoration: none;
     color: #fff;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 0;
-    
+    font-family: 'Englebert', sans-serif;   
 }
 
 #nav-bar .span-link:hover{
     float: left;
-    background: rgba(233, 138, 14, 0.6);
+    background: rgba(88, 88, 88, 0.6);
     text-align: center;
     border-radius: 5px;
-    margin: 5px;
-    padding: 30px 8px;
+    margin: 3px;
+    padding: 10px 8px;
     border-top: 1px solid rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    align-self: center;
 }
 
 #header-img{
@@ -63,146 +70,299 @@ body{
     float: right;
     top: 0;
     right: 0;
-    padding: 0 1em;
-    height: 97px;
-    border-radius: 100%;
-    max-width: 90px;
-    width: 100%;
+    padding: 0px 5px;
+    max-width: 80px;
 }
 
 #header-texto{
     width: 70%;
     height: 50%;
-    transform: translate(25%, 50%);
+    transform: translate(0, 35%);
     text-align: center;
-    background:rgba(59, 48, 55, 0.8);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 #header-texto h1{
-    padding: 20px 0 10px 0;
-    font-size: 80px;
-    color: rgb(233, 138, 14);
+    padding: 15px 0 0 0;
+    font-size: 75px;
+    color: rgb(23, 117, 86);
     text-shadow: 2px 2px 2px #fff;
-    
-    font-weight: 400;
+    font-family: 'Slackey', cursive;
 }
 
 #header-texto h3{
-    color:  rgb(147, 184, 175);
-    font-size: 24px;
-    font-weight: lighter;
+    color:  rgb(54, 99, 87);
+    font-size: 20px;
+    font-family: 'Englebert', sans-serif;
 }
 
 #main{
-    height: 100vh;
+    height: auto;
     width: 100%;
-    border-radius: 10px;
-    *display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 #section-video{
+    order: 1;
     max-width: 100%;
     height: 70%;
     padding: 5px 0px 5px 5px;
     display: flex;
     justify-content: center;
-
 }
 
 #video{
-    width: 70%;
-    height: auto;
     border-radius: 10px;
-}
-#section-informacion{
-    padding: 5px 2px 5px 2px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
 }
 
-.nosotros{
-    background:  rgb(238, 157, 36);
+#section-informacion{
+    order: 3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#nosotros{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+#nosotros .div-nosotros{
+    width: 500px;
+}
+
+#nosotros .div-nosotros img{
+    width: 500px;
+    min-width: 50%;
+    height: auto;
+    margin: 5px 0;
+}
+
+#nosotros .div-h-nosotros{
     padding: 10px;
-    text-align: justify;
-    flex-basis: 29%;
+    max-width: 70%;
+    text-align: center;
+    font-family: 'Englebert', sans-serif;   
+}
+
+#servicios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+#servicios .div-servicios{
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#servicios .div-servicios img{
+    width: 400px;
+    min-width: 90%;
+    height: auto;
+    margin: 5px 0;
+}
+
+#servicios .div-servicios h3{
+    text-align: center;
+    font-family: 'Englebert', sans-serif;
+}
+
+#servicios .div-h-servicios{
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Englebert', sans-serif;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#servicios a{
+    text-decoration: none;
+    text-decoration: none;
+    background: rgba(34, 136, 122, 0.24);
+    color: rgb(230, 134, 55);
+    font-size: 12pt;
+    padding: 10px 10px 0 10px;
+    font-family: 'Englebert', sans-serif;
     border-radius: 10px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 10px 10px 10px 40px;
+}
+
+#servicios a:hover{
+    text-decoration: none;
+    text-decoration: none;
+    background: rgba(34, 136, 122, 0.24);
+    color: rgb(230, 134, 55);
+    border: solid 2px;
+    font-size: 12pt;
+    padding: 10px 10px 0 10px;
+    font-family: 'Englebert', sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 10px 10px 10px 40px;
+}
+
+#productos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+#productos .div-productos{
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+#productos .div-productos img{
+    width: 400px;
+    min-width: 90%;
+    height: auto;
+    margin: 5px 0;
+}
+
+#productos .div-productos h3{
+    text-align: center;
+    font-family: 'Englebert', sans-serif;
+}
+
+#productos .div-h-productos{
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Englebert', sans-serif;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#productos a{
+    text-decoration: none;
+    text-decoration: none;
+    background: rgba(34, 136, 122, 0.24);
+    color: rgb(230, 134, 55);
+    font-size: 12pt;
+    padding: 10px 10px 0 10px;
+    font-family: 'Englebert', sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 10px 10px 10px 40px;
     
 }
 
-.servicios{
-    background:  rgb(238, 157, 36);
-    padding: 10px;
-    flex-basis: 29%;
+#productos a:hover{
+    text-decoration: none;
+    text-decoration: none;
+    background: rgba(34, 136, 122, 0.24);
+    color: rgb(230, 134, 55);
+    border: solid 2px;
+    font-size: 12pt;
+    padding: 10px 10px 0 10px;
+    font-family: 'Englebert', sans-serif;
     border-radius: 10px;
-}
-
-.productos{
-    background:  rgb(238, 157, 36);
-    padding: 10px;
-    flex-basis: 29%;
-    border-radius: 10px;
-}
-
-#section-informacion h2{
-    color: #fff;
     text-align: center;
-}
-
-#section-informacion li{
-    color: #fff;
-    text-align: justify;
-}
-
-#section-informacion p{
-    color: #fff;
-    text-align: justify;
+    width: 60px;
+    height: 30px;
+    margin: 10px 10px 10px 40px;
+    
 }
 
 #section-form{
-    width: 100%;
-    height: 10%;
+    order: 2;
+    width: 500px;
+    max-width: 80%;
+    height: auto;
     margin: 5px 0px 5px 0px;
     padding: 10px 0px 10px 0px;
-    background: rgb(119, 86, 105);
+    background: rgba(34, 136, 122, 0.24);
     border-radius: 10px;
     display: flex;
+
+}
+
+#section-form #form{
+    width: 100%;
+    font-family: 'Englebert', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
-}
-#form{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    
 }
 
-#name{
+#section-form #form .div-form{
+    margin:5px;
+}
+
+#section-form #form #name{
+    min-width: 200px;
+    width: 400px;
     padding: 10px 0px 10px 0px;
     background: white;
     border-radius: 10px;
-    flex-basis: 45%;
     text-align: center;
+    font-family: 'Englebert', sans-serif;  
 }
 
-#email{
+#section-form #form #email{
+    min-width: 200px;
+    width: 400px;
     padding: 10px 0px 10px 0px;
     background: white;
     border-radius: 10px;
-    flex-basis: 35%;
     text-align: center;
+    font-family: 'Englebert', sans-serif;  
 }
 
-#submit{
+#section-form #form #submit{
+    min-width: 200px;
+    width: 60px;
     padding: 10px 0px 10px 0px;
     background: white;
     border-radius: 10px;
-    flex-basis: 10%;
     text-align: center;
+    font-family: 'Englebert', sans-serif;  
+}
+
+#section-form #form #submit:hover{
+    min-width: 200px;
+    width: 60px;
+    padding: 10px 0px 10px 0px;
+    background: rgb(253, 187, 101);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Englebert', sans-serif;  
 }
 
 @media only screen and (max-width: 600px){
@@ -216,3 +376,5 @@ body{
     }
 
 }
+
+

@@ -12,60 +12,100 @@
     <header class="border" id="header">
         <div class="border" id="header-texto">
             <h1>Botanical Spa</h1>
-            <h3>Servicios personalizados</h3>
+            <h3>Servicios personalizados
+                <br><br>
+                <hr>
+                El bienestar y la salud son un deber, de otra manera no podríamos mantener nuestra mente fuerte y clara
+                <hr><small>Buda</small>.
+            </h3>
         </div>
-        </div>
-       
+
         <nav class="border" id="nav-bar">
             <span class="border span-link"><a class="nav-link" href="#header">Home</a></span>
+            <span class="border span-link"><a class="nav-link" href="#section-form">Registro</a></span>
             <span class="border span-link"><a class="nav-link" href="#nosotros">Nosotros</a></span>
             <span class="border span-link"><a class="nav-link" href="#servicios">Servicios</a></span>
             <span class="border span-link"><a class="nav-link" href="#productos">Productos</a></span>
-            <span class="border span-link"><a class="nav-link" href="#section-form">Registro</a></span>
         </nav>
 
-        <img class="border" id="header-img" src="/landing-page/images/logo.png" alt="logo">
-
+        <div>
+            <img class="border" id="header-img" src="/landing-page/images/logo-1.png" alt="logo" />
+        </div>
     </header>
     <main id="main">
-        <section class="border" id="section-video">
-            <iframe id="video" width="400" height="auto" src="https://www.youtube.com/embed/rSf5MhsnQRI" frameborder="0"
+        <section id="section-video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ljM-z4Erj68" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
         <section class="border" id="section-informacion">
-            <article class="nosotros border" id="nosotros">
-                <h2>Nosotros</h2>
-                <p>Somos un centro de relajación personalizado; nuestro ideal es enfocarnos en las necesidades de cada
-                    cliente, usando productos botánicos</p>
+            <article id="nosotros">
+                <div class="div-h-nosotros">
+                    <h2>Nosotros</h2>
+                    <p>Somos un centro de relajación personalizado; nuestro ideal es enfocarnos en las necesidades de
+                        cada
+                        cliente, usando productos botánicos</p>
+                </div>
+                <div class="div-nosotros">
+                    <img src="/landing-page/images/nosotros/nosotros.jpg" alt="">
+                </div>
+                <div class="div-nosotros">
+                    <img src="/landing-page/images/nosotros/nosotros-1.jpg" alt="">
+                </div>
             </article>
-            <article class="servicios border" id="servicios">
-                <h2>Servicios</h2>
-                <ul>
-                    <li>Piscinas Cálidas</li>
-                    <li>Duchas de Cascada</li>
-                    <li>Boticario</li>
-                </ul>
+            <article id="servicios">
+                <div class="div-h-servicios">
+                    <h2>Servicios</h2>
+                    <a href="#" type="button">Reservar</a>
+                </div>
+                <div class="div-servicios">
+                    <h3>Piscinas Cálidas</h3>
+                    <img src="/landing-page/images/servicios/piscinas.jpg" alt="">
+                </div>
+                <div class="div-servicios">
+                    <h3>Duchas de Cascada</h3>
+                    <img src="/landing-page/images/servicios/duchas.jpg" alt="">
+                </div>
+                <div class="div-servicios">
+                    <h3>Boticario</h3>
+                    <img src="/landing-page/images/servicios/boticario.jpg" alt="">
+                </div>
             </article>
-            <article class="productos border" id="productos">
-                <h2>Productos</h2>
-                <ul>
-                    <li>Aceites esenciales</li>
-                    <li>Compresas herbales</li>
-                    <li>Hierbas aromáticas</li>
-                    <li>Jabones botánicos</li>
-                </ul>
+            <article id="productos">
+                <div class="div-h-productos">
+                    <h2>Productos</h2>
+                    <a href="#" type="button">Comprar</a>
+                </div>
+                <div class="div-productos">
+                    <h3>Aceites Esenciales</h3>
+                    <img src="/landing-page/images/productos/esenciales.jpg" alt="aceites esenciales">
+                </div>
+                <div class="div-productos">
+                    <h3>Compresas Herbales</h3>
+                    <img src="/landing-page/images/productos/herbales.jpg" alt="">
+                </div>
+                <div class="div-productos">
+                    <h3>Jabones botánicos</h3>
+                    <img src="/landing-page/images/productos/jabones.jpg" alt="">
+                </div>
             </article>
         </section>
-        <section class="border" id="section-form">
-            <form class="border" id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="name" type="text" placeholder="Nombre"></input>
-                <input id="email" type="email" placeholder="email" name="email"></input>
-                <input id="submit" type="submit" placeholder="Enviar"></input>
+        <section id="section-form">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h3>Registrate para recibir todas nuestras ofertas</h3>
+                <div class="div-form">
+                    <input id="name" type="text" placeholder="Nombre"></input>
+                </div>
+                <div class="div-form">
+                    <input id="email" type="email" placeholder="email" name="email"></input>
+                </div>
+                <div class="div-form">
+                    <input id="submit" type="submit" placeholder="Enviar"></input>
+                </div>
             </form>
         </section>
     </main>
-    
+
 </body>
 
 </html>
